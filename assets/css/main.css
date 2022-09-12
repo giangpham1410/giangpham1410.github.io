@@ -2832,7 +2832,9 @@ input, select, textarea {
 			width: calc(33.33333% - 2em);
 			margin-left: 2em;
 			margin-top: 3em;
-			padding: 0;
+			padding: 7px;
+			border: solid 1px #F2F2F2;
+			box-shadow: 1px 1px #DEDEDE;
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
@@ -3873,4 +3875,8 @@ input, select, textarea {
 
 .projectname {
 	font-weight: bold;
+}
+
+.aboveline {
+	border-top: solid 1px #DEDEDE;
 }
