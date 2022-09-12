@@ -99,11 +99,14 @@ input, select, textarea {
 	}
 
 	body {
+		background-image: linear-gradient(#006494, #003554);
+		/*
 		background-color: #935d8c;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -161,12 +164,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
 		color: inherit;
+		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
+			text-decoration: none;
 		}
 
 	strong, b {
@@ -196,7 +200,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
-		margin: 0 0 0.7em 0;
+		margin: 0 0 0.3em 0;
 		letter-spacing: -0.025em;
 	}
 
@@ -212,10 +216,19 @@ input, select, textarea {
 
 	h2 {
 		font-size: 1.5em;
+		text-align: left;
+	}
+
+	h2 span {
+		background-color:#3d5a80;
+		color: #fff;
+		padding: 5px;
+
 	}
 
 	h3 {
 		font-size: 1.25em;
+		text-align: left;
 	}
 
 	h4 {
@@ -1843,7 +1856,7 @@ input, select, textarea {
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 300;
+		font-weight: bold;
 		height: 2.75em;
 		line-height: 2.75em;
 		min-width: 9.25em;
@@ -2361,7 +2374,6 @@ input, select, textarea {
 		}
 
 /* Image */
-
 	.image {
 		border-radius: 8px;
 		border: 0;
@@ -2428,7 +2440,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 1.2em 0;
 		padding-left: 1em;
 	}
 
@@ -2652,11 +2664,12 @@ input, select, textarea {
 				margin: 0.7em 0 1em 0;
 				border-radius: 2px;
 			}
-
+			/*
 				section.special header.major h2:after, article.special header.major h2:after {
 					margin-left: auto;
 					margin-right: auto;
 				}
+			*/
 
 		header.major p {
 			font-size: 1.25em;
@@ -2811,6 +2824,8 @@ input, select, textarea {
 		margin: 0 0 3em -2em;
 		padding: 0;
 		list-style: none;
+		text-decoration: none;
+		text-align: left;
 	}
 
 		.features li {
@@ -3546,10 +3561,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -moz-linear-gradient(90deg, #023e8a, #0077b6, #0096c7);
+			background-image: -webkit-linear-gradient(90deg, #023e8a, #0077b6, #0096c7);
+			background-image: -ms-linear-gradient(90deg, #023e8a, #0077b6, #0096c7);
+			background-image: linear-gradient(90deg, #023e8a, #0077b6, #0096c7);
 		}
 
 		#main table tbody tr {
@@ -3790,8 +3805,8 @@ input, select, textarea {
 .column {
 	float: left;
 	width: 50%;
-	padding: 10px;
-	height: 300px; /* Should be removed. Only for demonstration */
+	padding: 0px;
+	
   }
   
   /* Clear floats after the columns */
@@ -3850,3 +3865,12 @@ input, select, textarea {
 	}
   }
 
+.textbackground {
+	background-color: #006393;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+.projectname {
+	font-weight: bold;
+}

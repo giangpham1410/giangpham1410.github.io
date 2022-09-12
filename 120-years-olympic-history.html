@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Remote Working Survey - How has remote work changed in 2021, barriers and opportunities?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Analyzing student marks</h1>
+						<p></p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<span class="image main"><img src="images\olympic-history.png" alt="" /></span>
+								<h2>I. Dataset Summary</h2>
+                                    <p>This is a historical dataset on the modern Olympic Games, including all the Games from Athens 1896 to Rio 2016.</p>
+									<p>Note that the Winter and Summer Games were held in the same year up until 1992. After that, they staggered them such that Winter Games occur on a four-year cycle starting with 1994, then Summer in 1996, then Winter in 1998, and so on. A common mistake people make when analyzing this data is to assume that the Summer and Winter Games have always been staggered.</p>
+                                <h2>II. Dataset</h2>
+								<p>The file <b>athlete_events.csv</b> contains 271,116 rows and 15 columns. Each row corresponds to an individual athlete competing in an individual Olympic event (athlete-events). The columns are:</p>
+								<ol>
+									<li><span class="textbackground">ID</span>: Unique number for each athlete</li>
+									<li><span class="textbackground">Name</span>: Athlete's name</li>
+									<li><span class="textbackground">Sex</span>: M or F</li>
+									<li><span class="textbackground">Age</span>: Integer</li>
+									<li><span class="textbackground">Height </span>: In centimeters</li>
+									<li><span class="textbackground">Weight </span>: In kilograms</li>
+									<li><span class="textbackground">Team </span>: Team name</li>
+									<li><span class="textbackground">NOC </span>: National Olympic Committee 3-letter code</li>
+									<li><span class="textbackground">Games </span>: Year and season</span></li>
+									<li><span class="textbackground">Year </span>: Integer</li>
+									<li><span class="textbackground">Season </span>: Summer or Winter</li>
+									<li><span class="textbackground">City </span>: Host city</li>
+									<li><span class="textbackground">Sport </span>: Sport</li>
+									<li><span class="textbackground">Event </span>: Event </span></li>
+									<li><span class="textbackground">Medal </span>: Gold, Silver, Bronze, or NA</li>
+								</ol>
+								<p>The file <b>noc_regions.csv</b> contains 230 rows and 3 columns. The columns are:</p>
+								<ol>
+									<li>NOC (National Olympic Committee 3 letter code)</li>
+									<li>Country name (matches with regions in map_data("world"))</li>
+									<li>Notes</li>
+								</ol>
+                                <h2>III. Language: PostgresSQL</h2>
+								<h2>IV. List of queries</h2>
+								<ol>
+									<li>How many olympics games have been held?</li>
+									<li>List down all Olympics games held so far.</li>
+									<li>Mention the total no of nations who participated in each olympics game?</li>
+									<li>Which year saw the highest and lowest no of countries participating in olympics?</li>
+									<li>Which nation has participated in all of the olympic games?</li>
+									<li>Identify the sport which was played in all summer olympics.</li>
+									<li>Which Sports were just played only once in the olympics?</li>
+									<li>Fetch the total no of sports played in each olympic games.</li>
+									<li>Fetch details of the oldest athletes to win a gold medal.</li>
+									<li>Find the Ratio of male and female athletes who participated in all olympic games.</li>
+									<li>Fetch the top 5 athletes who have won the most gold medals.</li>
+									<li>Fetch the top 5 athletes who have won the most medals (gold/silver/bronze).</li>
+									<li>Fetch the top 5 most successful countries in olympics. Success is defined by no of medals won.</li>
+									<li>List down total gold, silver and bronze medals won by each country.</li>
+									<li>List down total gold, silver and bronze medals won by each country corresponding to each olympic games.</li>
+									<li>Identify which country won the most gold, most silver and most bronze medals in each olympic games.</li>
+									<li>Identify which country won the most gold, most silver, most bronze medals and the most medals in each olympic games.</li>
+									<li>Which countries have never won gold medal but have won silver/bronze medals?</li>
+									<li>In which Sport/event, India has won highest medals.</li>
+									<li>Break down all olympic games where india won medals for Hockey and how many medals in each olympic games.</li>
+								</ol>
+
+                                <footer class="major">
+									<ul class="actions special">
+										<li><a href="https://bit.ly/olympic_history_sql" class="button" target="_blank">View source code</a></li>
+									</ul>
+								</footer>
+                            
+                                    <p class="backtohomepage">
+                                        <a href="https://giangpham1410.github.io/"> BACK TO HOMEPAGE</a>
+                                    </p>
+							</section>
+
+                            
+					</div>
+
+
+                
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <section>
+                        <h2>Contact Me</h2>
+                        <dl class="alt">
+                            <dt>Email</dt>
+                            <dd><a href="#">giang.pnt1410@gmail.com</a></dd>
+                            <dt>Address</dt>
+                            <dd>Ho Chi Minh city, Vietnam</dd>
+                            <dt>Linkedin</dt>
+                            <dd><a href="https://www.linkedin.com/in/giangpham1410/" target="_blank">linkedin.com/in/giangpham1410/</a></dd>
+                            <dt>GitHub</dt>
+                            <dd><a href="https://github.com/giangpham1410/" target="_blank">github.com/giangpham1410/</a></dd>
+                            
+                        </dl>
+                        <ul class="icons">
+                            <li><a href="#" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+                            <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+                            <li><a href="#" class="icon brands fa-medium alt"><span class="label">Medium</span></a></li>
+                        </ul>
+                    </section>
+                    <p class="copyright">&copy; Source Code: <a href="https://html5up.net">HTML5 UP</a> | Re-design: giangpham1410</p>
+                </footer>
+
+			</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
