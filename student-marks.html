@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Remote Working Survey - How has remote work changed in 2021, barriers and opportunities?</title>
+		<title>Analyzing student marks</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +28,6 @@
 
 						<!-- Content -->
 							<section id="content" class="main">
-								<span class="image main"><img src="images\student-marks-diagram.png" alt="" /></span>
 								<h2>I. Dataset Summary</h2>
                                     <p>The dataset includes much information about students such as name, batch name, marks, sessions, and their instructors...</p>
                                 <h2>II. Dataset</h2>
@@ -40,11 +39,13 @@
 								<li><span class="textbackground">instructor_batch_maps</span>: This table is a mapping of the instructor and the batch he has been assigned to take class/session.</li>
 								<li><span class="textbackground">sessions</span>: Every day session happens where the teacher takes a session or class of students.</li>
 								<li><span class="textbackground">attendances</span>: After session or class happens between teacher and student, attendance is given by student. Students provide ratings to the teacher.</li>
-								<li><span class="textbackground">ests</span>: Test is created by instructor. total_mark is the maximum marks for the test.</li>
+								<li><span class="textbackground">tests</span>: Test is created by instructor. total_mark is the maximum marks for the test.</li>
 								<li><span class="textbackground">test_scores</span>: Marks scored by students are added in the test_scores table.</li>
 								</ol>
                                 <h2>III. Language: PostgresSQL</h2>
-								<h2>IV. List of queries</h2>
+								<h2>IV. Diagram</h2>
+									<span class="image main"><img src="images\student-marks-diagram.png" alt="Student marks diagram" /></span>
+								<h2>V. List of queries</h2>
 								<ol>
 									<li>Calculate the average rating given by students to each teacher for each session created.
 										Also, provide the batch name for which session was conducted.</li>
@@ -97,19 +98,18 @@
                         <dl class="alt">
                             <dt>Email</dt>
                             <dd><a href="#">giang.pnt1410@gmail.com</a></dd>
-                            <dt>Address</dt>
-                            <dd>Ho Chi Minh city, Vietnam</dd>
-                            <dt>Linkedin</dt>
+                            <dt>LinkedIn</dt>
                             <dd><a href="https://www.linkedin.com/in/giangpham1410/" target="_blank">linkedin.com/in/giangpham1410/</a></dd>
                             <dt>GitHub</dt>
-                            <dd><a href="https://github.com/giangpham1410/" target="_blank">github.com/giangpham1410/</a></dd>
-                            
+                            <dd><a href="https://giangpham1410.github.io/" target="_blank">giangpham1410.github.io</a></dd>
+                            <dt>Address</dt>
+                            <dd>Ho Chi Minh city, Vietnam</dd>
                         </dl>
                         <ul class="icons">
-                            <li><a href="#" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-                            <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                            <li><a href="#" class="icon brands fa-medium alt"><span class="label">Medium</span></a></li>
-                        </ul>
+							<li><a href="https://www.linkedin.com/in/giangpham1410/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://giangpham1410.github.io/"target="_blank"  class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<!-- <li><a href="" target="_blank" class="icon brands fa-medium alt"><span class="label">Medium</span></a></li> -->
+						</ul>
                     </section>
                     <p class="copyright">&copy; Source Code: <a href="https://html5up.net">HTML5 UP</a> | Re-design: giangpham1410</p>
                 </footer>
