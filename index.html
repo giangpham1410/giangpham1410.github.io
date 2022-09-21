@@ -10,6 +10,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap" rel="stylesheet">
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -18,10 +24,13 @@
 			<div id="wrapper">
 
 				<!-- Header -->
+				<!--
 					<header id="header" class="alt">
 						<span class="logo"><img style="width: 180px; border-radius: 90px;" src="images/giang-logo.jpg" alt="" /></span>
 						<h1>Giang Pham's Portfolio</h1>
 					</header>
+				-->
+					<img src="images/giang-banner-1.png" alt="">
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -31,6 +40,7 @@
 							<li><a href="#sql">SQL Projects</a></li>
 							<li><a href="#powerbi">Power BI Projects</a></li>
 							<li><a href="#python">Python Projects</a></li>
+							<!-- <li><a href="#blog">Blog</a></li> -->
 						</ul>
 					</nav>
 
@@ -41,6 +51,7 @@
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
+										<!--
 										<header class="major">
 											<h2>
 												<div>
@@ -50,7 +61,27 @@
 												</div>
 											</h2>
 										</header>
-										
+										-->
+
+										<p class="row">
+											<div class="column" style="margin: auto; text-align: center;">
+												<img src="images/giang-photo.png" alt="">
+											</div>
+
+											<div class="column">
+												<p style="font-size: 18pt;">My name is <span style="color:#F26B4E; font-weight: 600;"> Giang Pham</span></p>
+												<p>I’m self-study and enjoy working with computers and numbers.</p>
+												<p>My background as a Salesforce Administration and Ecommerce Specialist in the BAYA Furniture & Decoration has given me a deep foundation in working with many systems in data collection, analysis, visualization, and coming up with insights and recommendations. 
+												</p>
+												<p>At first, I use Excel for data analysis, ad-hoc reports,... and Data Studio for shared reports, then I learned to use other tools like MySQL, Power BI, and Python to analyze data more effectively.</p>
+												<ul>
+													<li>LinkedIn: <a href="https://www.linkedin.com/in/giangpham1410/" target="_blank">linkedin.com/in/giangpham1410/</a></li>
+													<li>Email: giang.pnt1410@gmail.com</li>
+												</ul>
+											</div>
+										</p>
+
+										<!--
 										<p>My background as a Salesforce Administration and Ecommerce Specialist in the BAYA Furniture & Decoration has given me a deep foundation in working with many systems in data collection, analysis, visualization, and coming up with insights and recommendations. 
 										</p>
 										<p>I’m self-study and enjoy working with computers and numbers. At first, used Excel and then learned to use other tools like MySQL, Power BI, and Python to analyze data more effectively.
@@ -59,6 +90,9 @@
 											<li>LinkedIn: <a href="https://www.linkedin.com/in/giangpham1410/" target="_blank">linkedin.com/in/giangpham1410/</a></li>
 											<li>Email: giang.pnt1410@gmail.com</li>
 										</ul>
+										-->
+
+										<div style="clear: both; "></div>
 
 										<p class="row">
 											<div class="column">
@@ -73,13 +107,18 @@
 											<div class="column">
 											  <h2>Technical Skills</h2>
 											  <ul>
-												<li>Data tools: Excel, Google Sheets, SQL, Power BI, and Python</li>
-												<li>Platforms: Magento, Salesforce, SAP, Shopify, and WordPress</li>
+												<li>Data tools: Excel, Google Sheets, SQL, Power BI, Python</li>
+												<li>Platforms: Magento, Salesforce, SAP, Haravan, WordPress</li>
 												<li>Web tools: HTML, CSS, UI/UX, Google Analytics</li>
 												<li>Other tools: Trello, Teams, Diagram.net</li>
 											  </ul>
 											</div>
 										</p>
+
+										<div style="clear: both; "></div>
+
+										<h2 style="font-weight: 900; font-size: 25pt; text-align: center; margin-top: 30px;">I'm open to work!</h2>
+
 									</div>
 									
 								</div>
@@ -194,6 +233,12 @@
 								</header>
 								<ul class="features">
 									<li>
+										<a href="financial-report.html">
+											<img class="imagefix" style="text-decoration: none;" src="images\financial-report-cover.png" alt="Adventure Works - Sales & Customer Analysis" width="100%">
+										</a>
+										<p>Financial Report - Income Statement, Balance Sheet, Cash Flow, Financial Details, Revenue Insights</p>
+									</li>
+									<li>
 										<a href="adventure-works.html">
 											<img class="imagefix" style="text-decoration: none;" src="images\adventure-works-dashboard-cover.png" alt="Adventure Works - Sales & Customer Analysis" width="100%">
 										</a>
@@ -282,6 +327,22 @@
 							</p>
 						</section>
 
+						<!-- Blog 
+						<section id="python" class="main special">
+							<header class="major">
+								<h2><span>Blog</span></h2>
+								<h3></h3>
+							</header>
+							<p>
+								<ul style="text-align: left;">
+									<li>abc</li>
+									<li>abc</li>
+									<li>abc</li>
+									<li>abc</li>
+								</ul>
+							</p>
+						</section>
+						-->
 					</div>
 
 				<!-- Footer -->
@@ -289,13 +350,13 @@
 						<section>
 							<h2>Contact Me</h2>
 							<dl class="alt">
-								<dt>Email</dt>
+								<dt><i class="fa-solid fa-envelope-circle-check"></i></dt>
 								<dd><a href="#">giang.pnt1410@gmail.com</a></dd>
-								<dt>LinkedIn</dt>
+								<dt><i class="fa-brands fa-linkedin"></i></dt>
 								<dd><a href="https://www.linkedin.com/in/giangpham1410/" target="_blank">linkedin.com/in/giangpham1410/</a></dd>
-								<dt>GitHub</dt>
+								<dt><i class="fa-brands fa-github"></i></dt>
 								<dd><a href="https://giangpham1410.github.io/" target="_blank">giangpham1410.github.io</a></dd>
-								<dt>Address</dt>
+								<dt><i class="fa-sharp fa-solid fa-location-dot"></i></dt>
 								<dd>Ho Chi Minh city, Vietnam</dd>
 							</dl>
 							<ul class="icons">
