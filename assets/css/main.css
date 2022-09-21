@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;600;900&display=swap');
 
 /*
 	Stellar by HTML5 UP
@@ -99,9 +99,9 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: linear-gradient(#006494, #003554);
+		background-color: #232323;
 		/*
-		background-color: #935d8c;
+		background-image: linear-gradient(#006494, #003554);
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
@@ -123,14 +123,14 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #232323;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.65;
 	}
 
@@ -215,12 +215,14 @@ input, select, textarea {
 	}
 
 	h2 {
+		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 1.5em;
 		text-align: left;
+		font-weight: 600;
 	}
 
 	h2 span {
-		background-color:#3d5a80;
+		background-color:#F26B4E;
 		color: #fff;
 		padding: 5px;
 
@@ -2654,13 +2656,14 @@ input, select, textarea {
 
 		header.major h2 {
 			font-size: 2em;
+			font-weight: 900;
 		}
 
 			header.major h2:after {
 				display: block;
 				content: '';
 				width: 3.25em;
-				height: 2px;
+				height: 3px;
 				margin: 0.7em 0 1em 0;
 				border-radius: 2px;
 			}
@@ -3562,11 +3565,13 @@ input, select, textarea {
 		}
 
 		#main header.major h2:after {
-			background-color: #dddddd;
+			background-color: #F26B4E;
+			/*
 			background-image: -moz-linear-gradient(90deg, #023e8a, #0077b6, #0096c7);
 			background-image: -webkit-linear-gradient(90deg, #023e8a, #0077b6, #0096c7);
 			background-image: -ms-linear-gradient(90deg, #023e8a, #0077b6, #0096c7);
 			background-image: linear-gradient(90deg, #023e8a, #0077b6, #0096c7);
+			*/
 		}
 
 		#main table tbody tr {
@@ -3833,7 +3838,7 @@ input, select, textarea {
   /* Adding: Back to Homepage */
  .backtohomepage {
 	text-align: right;
-	color: blueviolet;
+	color: #232323;
 	font-weight: bold;
  }
 
@@ -3870,7 +3875,7 @@ input, select, textarea {
 /* End to Adding typing effect */
 
 .textbackground {
-	background-color: #F2F2F2;
+	background-color: #232323;
 	padding: 2px;
 	border-radius: 5px;
 }
