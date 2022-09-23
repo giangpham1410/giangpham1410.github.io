@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Analyzing student marks</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Analyzing student marks</h1>
+						<p></p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<h2>I. Dataset Summary</h2>
+                                    <p>The dataset includes much information about students such as name, batch name, marks, sessions, and their instructors...</p>
+                                <h2>II. Dataset</h2>
+								<p> The dataset includes 8 tables.</p>
+								<ol>
+								<li><span class="textbackground">users</span>: name (user name), active (boolean to check if user is active)</li>
+								<li><span class="textbackground">batches</span>: name (batch name), active (boolean to check if batch is active)</li>
+								<li><span class="textbackground">student_batch_maps</span>: This table is a mapping of the student and his batch. deactivated_at is the time when a student is made inactive in a batch.</li>
+								<li><span class="textbackground">instructor_batch_maps</span>: This table is a mapping of the instructor and the batch he has been assigned to take class/session.</li>
+								<li><span class="textbackground">sessions</span>: Every day session happens where the teacher takes a session or class of students.</li>
+								<li><span class="textbackground">attendances</span>: After session or class happens between teacher and student, attendance is given by student. Students provide ratings to the teacher.</li>
+								<li><span class="textbackground">tests</span>: Test is created by instructor. total_mark is the maximum marks for the test.</li>
+								<li><span class="textbackground">test_scores</span>: Marks scored by students are added in the test_scores table.</li>
+								</ol>
+                                <h2>III. Language: PostgresSQL</h2>
+								<h2>IV. Diagram</h2>
+									<span class="image main"><img src="..\images\student-marks-diagram.png" alt="Student marks diagram" /></span>
+								<h2>V. List of queries</h2>
+								<ol>
+									<li>Calculate the average rating given by students to each teacher for each session created.
+										Also, provide the batch name for which session was conducted.</li>
+									<li>Find the attendance percentage for each session for each batch.
+										Also mention the batch name and users name who has conduct that session.</li>
+									<li>What is the average marks scored by each student in all the tests the student had appeared?</li>
+									<li>A student is passed when he scores 40 percent of total marks in a test.
+										Find out how many students passed in each test. Also mention the batch name for that test.</li>
+									<li>A student can be transferred from one batch to another batch.
+										If he is transferred from batch a to batch b. batch b’s active=true and batch a’s active=false in student_batch_maps.
+										At a time, one student can be active in one batch only.
+										One Student can not be transferred more than four times.
+										Calculate each students attendance percentage for all the sessions created for his past batch. Consider only those sessions for which he was active in that past batch.</li>
+									<li>What is the average percentage of marks scored by each student in all the tests the student had appeared?</li>
+									<li>A student is passed when he scores 40 percent of total marks in a test.
+										Find out how many percentage of students have passed in each test. Also mention the batch name for that test.
+										</li>
+									<li>A student can be transferred from one batch to another batch.
+										If he is transferred from batch a to batch b. batch b’s active=true and batch a’s active=false in student_batch_maps.
+										At a time, one student can be active in one batch only.
+										One Student can not be transferred more than four times.
+										Calculate each students attendance percentage for all the sessions.</li>
+									<li>Find students who transferred from one batch to another batch.
+										Also mention the batch name and users name of the students.</li>
+									<li>A student is passed when he scores 40 percent of total marks in a test.
+										Find students who failed in a test. Also mention the batch name and user name for that test.</li>
+								</ol>
+
+                                <footer class="major">
+									<ul class="actions special">
+										<li><a href="https://bit.ly/student_marks_sql" class="button" target="_blank">View source code</a></li>
+									</ul>
+								</footer>
+                            
+                                    <p class="backtohomepage">
+                                        <a href="https://giangpham1410.github.io/"> BACK TO HOMEPAGE</a>
+                                    </p>
+							</section>
+
+                            
+					</div>
+
+
+                
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<h2>Contact Me</h2>
+						<dl class="alt">
+							<dt><i class="fa-solid fa-envelope-circle-check"></i></dt>
+							<dd><a href="#">giang.pnt1410@gmail.com</a></dd>
+							<dt><i class="fa-brands fa-linkedin"></i></dt>
+							<dd><a href="https://www.linkedin.com/in/giangpham1410/" target="_blank">linkedin.com/in/giangpham1410/</a></dd>
+							<dt><i class="fa-brands fa-github"></i></dt>
+							<dd><a href="https://giangpham1410.github.io/" target="_blank">giangpham1410.github.io</a></dd>
+							<dt><i class="fa-sharp fa-solid fa-location-dot"></i></dt>
+							<dd>Ho Chi Minh city, Vietnam</dd>
+						</dl>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/giangpham1410/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://giangpham1410.github.io/"target="_blank"  class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<!-- <li><a href="" target="_blank" class="icon brands fa-medium alt"><span class="label">Medium</span></a></li> -->
+						</ul>
+					</section>
+					<p class="copyright">&copy; Source Code: <a href="https://html5up.net">HTML5 UP</a> | Re-design: giangpham1410</p>
+				</footer>
+
+			</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
