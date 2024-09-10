@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ADELINE Shop - Case Study</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Adeline Shop - Case Study</h1>
+						<p class="detailed-skill">Skills: Exploratory data analysis, pivot tables, data visualization, storytelling</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="..\images\global-unicorn-landscape.png" alt="Hotel Group - Analyze cancellation rates, and average daily prices & revenue lost" /></span> -->
+								<h2>1. Prompt</h2>
+									<ul>
+										<li>You are the business analyst on the Strategy and Operations team for the Adeline Shop Company. The company has physical shops in three cities in California, and customers place their orders via the app and pick up the orders in person.</li>
+										<li>The objective of Adeline Shop this year is to grow total sales revenue (please note that menu prices for the year have been set already). Based on the one week app data attached, please present your findings and provide a set of recommendations for growing total sales revenue. Feel free to make your own assumptions.</li>
+									</ul>
+								
+								<h2>2. Data fields</h2>	
+                                    <ul>
+                                        <li>Columns: 13</li>
+                                        <li>Rows: 1,049</li>
+                                    </ul>
+
+									<span class="image main"><img src="..\images\adeline_case_study_rawdata.jpg" alt="Adeline - Case Study - Raw data" /></span>
+
+								<h2>3. Metrics Definition</h2>
+								
+								<div class="table-container">
+									<table>
+										<thead>
+											<tr>
+												<th>Column Name</th>
+												<th>Metric Definition</th>
+												<th>Type</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>user_id</td>
+												<td>Unique identifier of a customer</td>
+												<td>Dimension</td>
+											</tr>
+											<tr>
+												<td>store city</td>
+												<td>City where the store is located</td>
+												<td>Dimension</td>
+											</tr>
+											<tr>
+												<td>store_id</td>
+												<td>Unique identifier of a store</td>
+												<td>Dimension</td>
+											</tr>
+											<tr>
+												<td>placed order time</td>
+												<td>Time when the customer placed the order (DAY-HOUR-MINUTE-SECOND, UTC)</td>
+												<td>Dimension</td>
+											</tr>
+											<tr>
+												<td>finished prep time</td>
+												<td>Time when the store finished prepping the order (HOUR-MINUTE-SECOND, UTC)</td>
+												<td>Dimension</td>
+											</tr>
+											<tr>
+												<td>order picked up time</td>
+												<td>Time when the customer picked up the order (HOUR-MINUTE-SECOND, UTC)</td>
+												<td>Dimension</td>
+											</tr>
+											<tr>
+												<td>account created</td>
+												<td>Year when the customer created the account on the app (YEAR)</td>
+												<td>Dimension</td>
+											</tr>
+											<tr>
+												<td>order total</td>
+												<td>Amount customer spent (in $USD)</td>
+												<td>Measure</td>
+											</tr>
+											<tr>
+												<td>order size</td>
+												<td>Number of drinks in the order</td>
+												<td>Measure</td>
+											</tr>
+											<tr>
+												<td>refund total</td>
+												<td>Amount refunded to the customer (in $USD)</td>
+												<td>Measure</td>
+											</tr>
+											<tr>
+												<td>rating</td>
+												<td>Rating the customer gives after picking up the order (from 1 to 5)</td>
+												<td>Measure</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<h2>4. Tool: Google Sheets, Google Slides.</h2>
+								
+                                
+
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://docs.google.com/presentation/d/1yJdy0anXFDwDn-PcZd6cwLtGjhSzVOFMqUC_LS-csCA/edit?usp=sharing" class="button" target="_blank">View presentation</a></li>
+									</ul>
+								</footer>
+                            
+                                    <p class="backtohomepage">
+                                        <a href="https://giangpham1410.github.io/"> BACK TO HOMEPAGE</a>
+                                    </p>
+							</section>
+
+                            
+					</div>
+
+
+                
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<h2>Contact Me</h2>
+						<dl class="alt">
+							<dt><i class="fa-solid fa-envelope-circle-check"></i></dt>
+							<dd><a href="#">giangpnt.work@gmail.com</a></dd>
+							<dt><i class="fa-brands fa-linkedin"></i></dt>
+							<dd><a href="https://www.linkedin.com/in/giangpham1410/" target="_blank">linkedin.com/in/giangpham1410/</a></dd>
+							<dt><i class="fa-brands fa-github"></i></dt>
+							<dd><a href="https://giangpham1410.github.io/" target="_blank">giangpham1410.github.io</a></dd>
+							<dt><i class="fa-sharp fa-solid fa-location-dot"></i></dt>
+							<dd>Ho Chi Minh city, Vietnam</dd>
+						</dl>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/giangpham1410/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://giangpham1410.github.io/"target="_blank"  class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+							<!-- <li><a href="" target="_blank" class="icon brands fa-medium alt"><span class="label">Medium</span></a></li> -->
+						</ul>
+					</section>
+					<p class="copyright">&copy; Source Code: <a href="https://html5up.net">HTML5 UP</a> | Re-design: giangpham1410</p>
+				</footer>
+
+			</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
