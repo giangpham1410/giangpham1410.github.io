@@ -3907,3 +3907,46 @@ input, select, textarea {
 	color: #000;
 	text-align: center;
 }
+
+/* Đặt tab như trong word */
+
+ul {
+	/* list-style-type: disc; /* Hiển thị bullet */
+	/* padding-left: 22px; */
+	/* margin: 0; */
+	display: block;
+	list-style-type: disc;
+	margin: 0 0 1.3em 0;
+	padding-left: 1.5em;
+}
+
+.content-line {
+	display: flex;
+	align-items: center;
+	margin-bottom: 5px; /* Giảm khoảng cách giữa các dòng */
+	line-height: 1.4; /* Điều chỉnh khoảng cách giữa các dòng nội dung */
+	position: relative; /* Đảm bảo bullet hiển thị đúng vị trí */
+	/* list-style-type: disc; */
+}
+
+.content-line::before {
+	content: ''; /* Tạo phần tử trước để hiển thị bullet */
+	position: absolute;
+	left: -15px; /* Điều chỉnh vị trí của bullet */
+	width: 6px;
+	height: 6px;
+	background-color: #636363;
+	border-radius: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	/* list-style-type: disc; */
+}
+
+.label {
+	min-width: 120px;
+	padding-right: 5px;
+}
+
+.value {
+	flex: 1;
+}
